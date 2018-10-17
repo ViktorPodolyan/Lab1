@@ -1,0 +1,114 @@
+body {
+	background: #ef7d74;
+	margin: 0px;
+}
+
+.header {
+	width: 100%;
+	height: 10vh; 
+	background: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header img {
+	padding-left: 50px;
+	padding-right: 50px;
+	float: middle;
+}
+
+.header-text{
+	color: black;/*цвет текста*/
+	text-decoration: none;/*убрать подчеркивание ссылок*/
+	display: flex;/*дочерний класс принимал значение .header*/
+	align-items: center;/*все елементы по центру*/
+	margin-left: 100px;/*отступ от левого края от начала*/
+}
+
+.header-text a{
+	padding: 5px;/*внешний отступ между текстом*/
+	color: black;/*цвет сылки на текст чёрный из  .header-text*/
+	text-decoration: none;/*убрать подчеркивание ссылок*/
+	font-family: impact;/*стиль текста*/
+}
+
+.header-picture{
+	display: flex;
+	align-items: center;
+	margin-right: 100px;/*внутренний отступ от края*/
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;/*все элементы которые принимают значение флех распологались в колону*/
+	width: 100%;
+	padding-top: 100px;/*внешний отступ от контейнера к хедеру*/
+	text-align: center;/*весь текст по центру*/
+	color: white;
+}
+
+.container-text{
+	display: flex;
+	flex-direction: column;
+	width: 25%;/*25% от род класса контайнер*/
+}
+
+.container-text h1{
+	font-family: arial black;/*style of text*/
+}
+
+.container-text p{
+	font-family: verdana;/*style of text*/
+}
+
+.container-blocks{
+	display: flex;
+	flex-direction: row;
+}
+
+.container-item{
+	display: flex;
+	flex-direction: column;
+	width: 190px;
+	padding: 70px;
+	font-size: 16px;
+	font-family: verdana;
+}
+
+.container-item .title{
+	font-family: arial black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer {
+	margin-top: 50vh;
+	width: 100%;
+	height:10vh;
+		background: white;
+}
+
+@media screen and (max-width: 1022px) {
+	.container-blocks{
+		flex-direction: column;
+	}
+	.container-item{
+		padding: 5px;
+	}
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 409px){
+	.header{
+		flex-direction: column;
+		align-items: center;
+		height: 18vh;
+	}
+
+	.container-text{
+		width: 90%;
+	}
+
+}
+
